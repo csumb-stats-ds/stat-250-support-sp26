@@ -1,0 +1,68 @@
+---
+title: "Week 1 Activity"  
+author: "NAME"
+format: html
+embed-resources: true
+html-math-method: mathml
+execute: 
+  warning: false
+  echo: true
+  error: false
+---
+
+Run this code chunk before you start each session. You do not yet need to understand it.
+```{r}
+#| label: setup
+
+library(tidyverse)
+library(mosaic)
+library(ggformula)
+```
+
+
+## Activity: king data set
+
+Read in the csv file `king.csv` and store it as the object `king` by modifying the code below to fill in each blank. To fill in the blanks in this assignment ___blank___, replace the entire phrase, including underscores. After reading in your data, it is a good habit to always use the function `names()` on your dataframe object to see the names of the variables.
+
+```{r}
+#| label: import-king-data
+
+king <- ___goal___("___file___")
+names(king) # will print out the variable names
+```
+
+
+### 1.   
+
+Find the mean birth weight of babies in the `king` data set.
+
+```{r}
+#| label: calculate-mean
+
+__goal__(__formula__, data = __mydata__)
+```
+
+
+### 2.   
+
+Create a table for the mothers' education level in the `king` data set.
+
+```{r}
+#| label: calculate-table
+
+__goal__(__formula__, data = __mydata__)
+```
+
+
+### 3.  
+
+Find the correlation between birth weight and estimated gestational age.
+
+```{r}
+#| label: calculate-correlation
+
+__goal__(__formula__, data = __mydata__)
+```
+
+
+
