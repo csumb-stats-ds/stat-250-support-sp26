@@ -1,0 +1,83 @@
+---
+title: "Week 2 Activity"  
+author: "NAME"
+format: html
+embed-resources: true
+html-math-method: mathml
+execute: 
+  warning: false
+  echo: true
+  error: true
+---
+
+Run this code chunk before you start each session.  
+```{r}
+#| label: setup
+
+library(tidyverse)
+library(mosaic) # package for statistics functions
+library(ggformula) # package for graphics functions
+```
+
+
+## Activity: Exploratory Data Analysis  
+
+### King County data  
+
+Recall the King data set that represents a sample of babies born in 2001 in King County, Washington. We are going to explore the following research question:  
+
+*On average, did women in King County, Washington with different educational levels have babies with different birth weights in 2001?*  
+
+
+Read in the `king.csv` data set and print the variable names.  
+
+```{r}
+king <- ___goal___("___filename___")
+___goal___(penguins)
+
+
+# This line of code reorders education levels as low, middle, high - you DO NOT yet need to understand until later in the semester
+king <- mutate(king, educlv = factor(educlv, levels=c("Low","Middle","High")))
+```
+
+
+### 1.  
+
+Create a histogram that addresses the question, being sure to use good graphic practices.
+
+< Insert code chunk >
+
+
+### 2.  
+
+Calculate summary statistics of birth weight for each education level. 
+
+< Insert code chunk >
+
+
+### 3.  
+
+Describe the shape of each distribution. Based on the shape, how do you expect the mean and median birth weight to compare for each education level? Why?
+
+> Insert answer here 
+
+
+### 4.  
+
+Compare the mean and median birth weight for each education level. If any, how large are the differences between the mean and median? Are these differences meaningful?
+
+> Insert answer here
+
+
+### 5.    
+
+Determine if there are any outliers of birth weight for mothers with *high* education levels. If so, how many are there? Are they unusually large or unusually small birth weights? How do you know? 
+
+< Insert code chunk >
+
+> Insert answer here
+
+
+
+
+
